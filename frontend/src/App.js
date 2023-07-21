@@ -1,12 +1,14 @@
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
-  );
+import "./App.css";
+
+export default function App() {
+  const buttonCyphers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  const operationCyphers = ["-", "+", "/", "*"];
+
+  const [calcMemory, setCalcMemory] = useState('');
+  const [calcInput, setCalcInput] = useState('');
+  const [answer, setAnswer] = useState('');
+  const [error, setError] = useState('');
+  return <div className="App"></div>;
 }
-
-export default App;
