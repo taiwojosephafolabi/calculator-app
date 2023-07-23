@@ -1,16 +1,30 @@
 import React from 'react';
 
-function Calculator({calculatorApp}) {
+function Calculator({calculatorApp, buttonCyphers, operationCyphers}) {
   return (
     <div className='calculator-grid'>
       <div className='output'>
-        <div className='previous-operand'></div>
-        <div className='current-operand'></div>
+        <div className='previous-operand'>123,456</div>
+        <div className='current-operand'>789,012</div>
       </div>
       <button className='span-two'>AC</button>
       <button>DEL</button>
-      {/* Input numbers and operands */}
-      <button></button>
+      <button>{operationCyphers[0]}</button>
+      <button>{buttonCyphers[0]}</button>
+      <button>{buttonCyphers[1]}</button>
+      <button>{buttonCyphers[2]}</button>
+      <button>{operationCyphers[1]}</button>
+      <button>{buttonCyphers[3]}</button>
+      <button>{buttonCyphers[4]}</button>
+      <button>{buttonCyphers[5]}</button>
+      <button>{operationCyphers[2]}</button>
+      <button>{buttonCyphers[6]}</button>
+      <button>{buttonCyphers[7]}</button>
+      <button>{buttonCyphers[8]}</button>
+      <button>{operationCyphers[3]}</button>
+      <button>{operationCyphers[4]}</button>
+      <button>{buttonCyphers[9]}</button>
+      <button className='span-two'>{operationCyphers[5]}</button>
     </div>
   );
 }
